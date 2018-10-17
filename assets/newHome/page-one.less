@@ -1,0 +1,163 @@
+.page-one {
+    padding-top: 105px;
+  position: relative;
+  width: 100%;
+  > .bg {
+      width: 100%;
+      min-height: 500px;
+      background-size: auto 100%;
+      > img {
+          display: none;
+          max-width: 100%;
+          height: auto;
+      }
+  }
+  > .page-one-box {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    //   background-color: rgba(0,0,0,.35);
+      .page-one-l {
+          padding: 150px 50px 0 50px;
+          width: 100%;
+          color: #333;
+          font-family: 'Roboto-regular';
+          > .title {
+              > h2 {
+                  font-size: 2rem;
+              }
+          }
+          > .title-sec {
+              margin: 24px 0;
+          }
+          > .btn {
+              padding: 8px 16px;
+              border: none;
+              border-radius: 6px;
+              cursor: pointer;
+              .trans(.4s, all, ease);
+          }
+      }
+      .page-one-r {
+          display: none;
+      }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page-one {
+      > .bg {
+          min-height: 400px;
+          background: none!important;
+          > img {
+              display: block;
+          }
+      }
+      > .page-one-box {
+          .row {
+              position: relative;
+              .page-one-l {
+                  padding: 100px 400px 0 50px;
+                  > .title {
+                      > h2 {
+                          font-size: 2.4rem;
+                      }
+                  }
+                  > .title-sec {
+                      margin: 24px 0;
+                  }
+                  // padding: 
+              }
+              .page-one-r {
+                  display: block;
+                  position: absolute;
+                  top: 120px;
+                  right: 50px;
+                  width: 300px;
+                  .input-code, .input-text, .chack-code-box, button {
+                      height: 35px;
+                  }
+              }
+          }
+      }
+  }
+}
+@media screen and (min-width: 992px) {
+  .page-one {
+      > .bg {
+          min-height: 400px;
+          background: none!important;
+          > img {
+              display: block;
+          }
+      }
+      > .page-one-box {
+          .row {
+              position: relative;
+              .page-one-l {
+                  padding: 100px 500px 0 150px;
+                  > .title {
+                      > h2 {
+                          font-size: 2.0rem;
+                      }
+                  }
+                  > .title-sec {
+                      margin: 24px 0;
+                  }
+                  // padding: 
+              }
+              .page-one-r {
+                  display: block;
+                  position: absolute;
+                  top: 160px;
+                  right: 150px;
+                  width: 300px;
+                  .input-code, .input-text, .chack-code-box, button {
+                      height: 35px;
+                  }
+              }
+          }
+      }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .page-one {
+      > .bg {
+          min-height: 400px;
+          background: none!important;
+          > img {
+              display: block;
+          }
+      }
+      > .page-one-box {
+          .row {
+              position: relative;
+              .page-one-l {
+                  padding: 150px 500px 0 120px;
+                  > .title {
+                      > h2 {
+                          font-size: 3rem;
+                      }
+                  }
+                  > .title-sec {
+                      font-size: 1.4rem;
+                      margin: 24px 0;
+                  }
+                  // padding: 
+              }
+              .page-one-r {
+                  display: block;
+                  position: absolute;
+                  top: 260px;
+                  right: 120px;
+                  width: 350px;
+                  .input-code, .input-text, .chack-code-box, button {
+                      height: 35px;
+                  }
+              }
+          }
+      }
+  }
+}

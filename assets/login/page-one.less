@@ -1,0 +1,111 @@
+.page-one {
+  padding: 100px 0;
+  min-width: 100%;
+  height: 100%;
+  // background-color: #f7f5f4;
+  .page-one-box {
+      position: relative;
+      width: 100%;
+      height: 500px;
+      background-color: #fff;
+      > .img-box {
+          display: none;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 50%;
+          height: 100%;
+          // display: table-cell;       vertical-align: middle;
+          > img {
+              transform: translateY(-50%);
+              width: 100%;
+              position: absolute;
+              top: 50%;
+              left: 0;
+          }
+      }
+      > .login-box {
+          padding-top: 100px;
+          // padding-left: 50%;
+          max-height: 100%;
+          > .title {
+              padding: 10px 0;
+              font-size: 1.4rem;
+              text-align: center;
+          }
+          > .form {
+              margin: 0 auto;
+              width: 300px;
+              > .form-item {
+                  position: relative;
+                  margin-bottom: 20px;
+                  width: 100%;
+                  input {
+                      padding: 10px 10px;
+                      width: 100%;
+                      font-size: 1rem;
+                      color: #666;
+                      outline: none;
+                      border-radius: 4px;
+                      border: 1px solid #ccc;
+                  }
+                  > button {
+                      padding: 10px;
+                      width: 100%;
+                      font-size: 1rem;
+                      color: #666;
+                      border-radius: 4px;
+                      border: 1px solid #ccc;
+                      cursor: pointer;
+                      outline: none;
+                  }
+                  > .error {
+                      color: #fff;
+                      background-color: #ed3f14;
+                      border: 1px solid #ed3f14;
+                  }
+                  > .info {
+                      color: #fff;
+                      background-color: #2db7f5;
+                      border: 1px solid #2db7f5;
+                  }
+                  > p {
+                      text-align: center;
+                      > a {
+                          color: #f00;
+                      }
+                  }
+                  > .code-box {
+                      width: calc(100% - 120px);
+                  }
+                  > .chack-code-box {
+                      position: absolute;
+                      top: 0;
+                      right: 0;
+                      width: 100px;
+                      height: 40px;
+                      text-align: center;
+                      line-height: 40px;
+                      cursor: pointer;
+                      background-color: #ccc;
+                      border-radius: 4px;
+                  }
+              }
+          }
+      }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page-one {
+      .page-one-box {
+          > .img-box {
+              display: block;
+          }
+          > .login-box {
+              padding-top: 60px;
+              padding-left: 50%;
+          }
+      }
+  }
+}

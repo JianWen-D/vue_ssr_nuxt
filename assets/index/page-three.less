@@ -1,0 +1,140 @@
+.page-three {
+    padding: 50px 24px;
+    background-color: #f7f7f7;
+    > .container {
+        > .row {
+            > .title {
+                font-size: 1.4rem;
+                text-align: center;
+                color: #00a5ff;
+            }
+            > .title-sec {
+                font-size: 1.2rem;
+                text-align: center;
+            }
+            > .list {
+                display: block;
+                margin-top: 50px;
+                width: 100%;
+                font-size: 0;
+                > li {
+                    display: inline-block;
+                    margin: 0 5% 24px 5%;
+                    margin-bottom: 24px;
+                    padding: 8px;
+                    font-size: 1rem;
+                    width: 90%;
+                    min-height: 200px;
+                    text-align: center;
+                    background-color: #fff;
+                    border-bottom: 2px solid #fff;
+                    vertical-align: text-top;
+                    .trans(.6s, all, ease);
+                    cursor: pointer;
+                    > .iconfont {
+                        display: block;
+                        font-size: 2rem;
+                        margin: 12px 0;
+                        .trans(.6s, color, ease);
+                    }
+                    > .title {
+                        margin-bottom: 12px;
+                        font-size: .9rem;
+                    }
+                    > .text {
+                        margin-bottom: 12px;
+                        text-align: left;
+                        font-size: .8rem;
+                        text-indent: 2em;
+                        line-height: 24px;
+                        color: #888;
+                    }
+                }
+                > li:nth-child(2n) {
+                    // margin-left: 10%;
+                }
+                > li:hover {
+                    border-bottom: 2px solid #00a5ff;
+                    box-shadow: 0 5px 15px rgba(0,0,0,.3);
+                    transform: translate3d(0,-2px,0);
+                    > .iconfont {
+                        color: #00a5ff;
+                    }
+                }
+            }
+        }
+    }
+  }
+  
+  
+  @media screen and (min-width: 768px) {
+    .page-three {
+        padding: 50px 24px;
+        background-color: #f7f7f7;
+        > .container {
+            > .row {
+                > .title {
+                    margin-bottom: 12px;
+                    font-size: 1.8rem;
+                }
+                > .title-sec {
+                    font-size: 1.4rem;
+                }
+                > .list {
+                    > li {
+                        display: inline-block;
+                        margin: 0 5% 24px 5%;
+                        padding: 12px;
+                        width: 40%;
+                        > .iconfont {
+                            font-size: 2.4rem;
+                        }
+                        > .title {
+                            font-size: 1rem;
+                        }
+                        > .text {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .page-three {
+        padding: 50px 24px;
+        background-color: #f7f7f7;
+        > .container {
+            > .row {
+                > .title {
+                    margin-bottom: 12px;
+                    font-size: 2rem;
+                }
+                > .title-sec {
+                    font-size: 1.6rem;
+                }
+                > .list {
+                    display: flex;
+                    > li {
+                        flex: 1;
+                        display: inline-block;
+                        margin: 0 .5% 24px .5%;
+                        padding: 12px;
+                        width: 19%;
+                        > .iconfont {
+                            font-size: 2.4rem;
+                        }
+                        > .title {
+                            font-size: 1rem;
+                        }
+                        > .text {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+  }

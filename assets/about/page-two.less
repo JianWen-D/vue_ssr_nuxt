@@ -1,0 +1,214 @@
+
+.page-two-a {
+    .title {
+        margin: 1rem 0;
+        text-align: center;
+    }
+  padding-top: 60px;
+  .l-side {
+      display: none;
+  }
+  .r-side {
+      width: 100%;
+      > .list-box {
+          padding: 0 1rem;
+          > .title {
+              margin-bottom: 1rem;
+              font-size: 2rem;
+              color: #00a5ff;
+          }
+          > .list {
+              width: 100%;
+              > li {
+                  > p {
+                      line-height: 40px;
+                      font-size: 1rem;
+                      border-top: 1px solid #ccc;
+                      border-bottom: 1px solid #ccc;
+                      cursor: pointer;
+                      > .iconfont {
+                          float: right;
+                          margin-top: 5px;
+                          font-size: 2rem;
+                          line-height: 35px;
+                          color: #ccc;
+                      }
+                  }
+                  > .text {
+                      display: none;
+                      padding: 1rem;
+                      text-indent: 2em;
+                      line-height: 1.6rem;
+                      color: #757676;
+                      background-color: #fafafa;
+                      border-bottom: 1px solid #ccc;
+                  }
+              }
+              > li + li {
+                  > p {
+                      border-top: 0;
+                  }
+              }
+          }
+      }
+      > .list-box + .list-box {
+          margin-top: 2rem;
+      }
+      > .list-box:last-child {
+          margin-bottom: 2rem;
+      }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page-two-a {
+      // padding: 0 1rem;
+      .l-side {
+          display: block;
+          float: left;
+          margin-bottom: 5rem;
+          width: 200px;
+          > ul {
+              > li {
+                  line-height: 40px;
+                  font-size: 1.4rem;
+                  color: #b3b3b3;
+                  cursor: pointer;
+              }
+              > .active {
+                  color: #333;
+              }
+          }
+      }
+      .r-side {
+          padding-left: 230px;
+          width: auto;
+          > .list-box {
+              padding: 0 1rem;
+              margin-bottom: 5rem;
+              > .title {
+                  margin-bottom: 1rem;
+                  font-size: 2.2rem;
+                  color: #00a5ff;
+              }
+              > .list {
+                  width: 100%;
+                  > li {
+                      > p {
+                          line-height: 40px;
+                          font-size: 1.2rem;
+                          border-top: 1px solid #ccc;
+                          border-bottom: 1px solid #ccc;
+                          > .iconfont {
+                              float: right;
+                              margin-top: 5px;
+                              font-size: 2rem;
+                              line-height: 35px;
+                              color: #ccc;
+                              cursor: pointer;
+                          }
+                      }
+                      > .text {
+                          display: none;
+                          padding: 1rem;
+                          text-indent: 2em;
+                          line-height: 2rem;
+                          font-size: 1.2rem;
+                          color: #757676;
+                          background-color: #fafafa;
+                          border-bottom: 1px solid #ccc;
+                      }
+                  }
+                  > li + li {
+                      > p {
+                          border-top: 0;
+                      }
+                  }
+              }
+          }
+          > .list-box + .list-box {
+              display: none;
+              margin-top: 2rem;
+          }
+          > .list-box:last-child {
+              margin-bottom: 2rem;
+          }
+      }
+  }
+}
+@media screen and (min-width: 992px) {
+  .page-two-a {
+      padding-top: 125px;
+      .l-side {
+          display: block;
+          float: left;
+          margin-bottom: 5rem;
+          width: 200px;
+          > ul {
+              > li {
+                  line-height: 40px;
+                  font-size: 1.4rem;
+                  color: #b3b3b3;
+                  cursor: pointer;
+              }
+              > .active {
+                  color: #333;
+              }
+          }
+      }
+      .r-side {
+          padding-left: 280px;
+          width: auto;
+          > .list-box {
+              padding: 0 1rem;
+              margin-bottom: 5rem;
+              > .title {
+                  margin-bottom: 1rem;
+                  font-size: 2.2rem;
+                  color: #00a5ff;
+              }
+              > .list {
+                  width: 100%;
+                  > li {
+                      > p {
+                          line-height: 40px;
+                          font-size: 1.2rem;
+                          border-top: 1px solid #ccc;
+                          border-bottom: 1px solid #ccc;
+                          > .iconfont {
+                              float: right;
+                              margin-top: 5px;
+                              font-size: 2rem;
+                              line-height: 35px;
+                              color: #ccc;
+                              cursor: pointer;
+                          }
+                      }
+                      > .text {
+                          display: none;
+                          padding: 1rem;
+                          text-indent: 2em;
+                          line-height: 2rem;
+                          font-size: 1.2rem;
+                          color: #757676;
+                          background-color: #fafafa;
+                          border-bottom: 1px solid #ccc;
+                      }
+                  }
+                  > li + li {
+                      > p {
+                          border-top: 0;
+                      }
+                  }
+              }
+          }
+          > .list-box + .list-box {
+              display: none;
+              margin-top: 2rem;
+          }
+          > .list-box:last-child {
+              margin-bottom: 2rem;
+          }
+      }
+  }
+}

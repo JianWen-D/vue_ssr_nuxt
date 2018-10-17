@@ -1,0 +1,134 @@
+.page-one {
+  padding-top: 105px;
+  > .img-box {
+      width: 100%;
+      > img {
+          width: 100%;
+      }
+  }
+  > .container {
+      > .row {
+          > .apply-nav {
+              // margin-top: 20px;
+              margin: 20px 8px 0 8px;
+              display: flex;
+              // width: 100%;
+              line-height: 50px;
+              border: 1px solid #ddd;
+              border-radius: 4px;
+              overflow: hidden;
+              > li {
+                  position: relative;
+                  flex: 1;
+                  text-align: center;
+              }
+              > li + li::before {
+                  position: absolute;
+                  top: 0;
+                  left: -30px;
+                  content: '';
+                  display: block;
+                  width: 50px;
+                  height: 50px;
+                  border-left:1px solid #ddd;
+                  border-top: 1px solid #ddd;
+                  border-bottom: 0;
+                  border-right: 0;
+                  transform: rotate(135deg)
+              }
+              > .active {
+                  color: #f00;
+              }
+          }
+          > .form-box {
+              margin: 30px 0;
+              width: 100%;
+              max-width: 100%;
+              > .form-item {
+                  display: flex;
+                  margin-bottom: 24px;
+                  width: 100%;
+                  > .form-col-1 {
+                      flex: 1;
+                  }
+                  > .form-col-2 {
+                      flex: 2;
+                  }
+                  > .form-col-3 {
+                      flex: 3;
+                  }
+                  > .form-col-4 {
+                      flex: 4
+                  }
+                  > div {
+                      > .title {
+                          line-height: 30px;
+                          color: #00a5ff;
+                      }
+                      > input, textarea {
+                          padding: 10px;
+                          width: 100%;
+                          border: 1px solid #ddd;
+                          border-radius: 4px;
+                          outline: none;
+                      }
+                      > .gray {
+                          background-color: #f7f7f7;
+                          line-height: 30px;
+                      }
+                      label + label {
+                          margin-left: 24px;
+                      }
+                      > button {
+                          float: right;
+                          padding: 8px 16px;
+                          background-color: #00a5ff;
+                          color: #fff;
+                          font-size: 1rem;
+                          border: none;
+                          border-radius: 5px;
+                          outline: none;
+                      }
+                  }
+                  > div:not(:last-child) {
+                      margin-right: 10px;
+                  }
+              }
+          }
+      }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page-one {
+      > .container {
+          > .row {
+              > .form-box {
+                  width: 80%;
+              }
+          }
+      }
+  }
+}
+@media screen and (min-width: 992px) {
+  .page-one {
+      > .container {
+          > .row {
+              > .form-box {
+                  width: 60%;
+              }
+          }
+      }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .page-one {
+      > .container {
+          > .row {
+              > .form-box {
+                  width: 50%;
+              }
+          }
+      }
+  }
+}
